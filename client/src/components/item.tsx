@@ -10,7 +10,8 @@ const Item = (props: ItemWrapperInterface) => {
         <div className='item'>
             {props.item.id.startsWith('new_') && <div className="dot"/>}
             <div className="item-input-wrapper">
-                <textarea className="item-body"
+                <textarea 
+                    className="item-input-body"
                     name="body"
                     defaultValue={props.item.text}
                     onChange={(event: any) => props.handleItemUpdate(event, props.item.id)}

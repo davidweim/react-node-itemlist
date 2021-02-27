@@ -96,8 +96,14 @@ body {
 }
 
 .item-input-wrapper {
-  flex-grow: 1;
-  padding: 0 16px;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.item-input-body{
+    width: 95%;
 }
 
 .item input {
@@ -147,8 +153,6 @@ body {
     height: 16px;
     color: white;
     background-color: #DA3B54;
-    margin-left: -36px;
-    margin-top: -10px;
   }
   
   .item-remove:hover {
